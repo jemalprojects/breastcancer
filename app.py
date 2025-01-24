@@ -95,6 +95,7 @@ elif choose == "Make Prediction":
                         st.write(f"Result: :blue[{result}]")
                     if predicted_class[0]==0:
                         result="Negative"
-                    st.write(f"Predicted Class: {result}")
+                        st.write(f"Result: :green[{result}]")
+                    # st.write(f"Predicted Class: {result}")
                 except Exception as e:
                     st.error(f"Error: {e}")
