@@ -92,6 +92,7 @@ elif choose == "Make Prediction":
                     result=""
                     if predicted_class[0]==1:
                         result="Positive"
+                        st.write(f"Result: :blue[{result}]")
                     if predicted_class[0]==0:
                         result="Negative"
                     st.write(f"Predicted Class: {result}")
