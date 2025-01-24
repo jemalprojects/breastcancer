@@ -6,7 +6,7 @@ from huggingface_hub import snapshot_download
 
 st.set_page_config(
     page_title="Breast Cancer Detection",
-    page_icon="🧑‍⚕",
+    page_icon="♈",
     # page_icon=icon,
     layout="wide"
 )
