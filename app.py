@@ -3,6 +3,30 @@ import tensorflow as tf
 from tensorflow.keras.utils import load_img, img_to_array
 import numpy as np
 from huggingface_hub import snapshot_download
+icon = Image.open("icons.png")
+st.set_page_config(
+    page_title="Breast Cancer Detection",
+    # page_icon="🌾",
+    page_icon=icon,
+    layout="wide"
+)
+st.markdown('''
+<style>
+.stApp [data-testid="stToolbar"]{
+    display:none;
+}
+</style>
+''', unsafe_allow_html=True)
+hide_st_text = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_text, unsafe_allow_html=True)
+
+
 model_dir = snapshot_download("abatejemal/breastcancer")
 
 # Parameters
