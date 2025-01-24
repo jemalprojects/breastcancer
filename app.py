@@ -43,7 +43,6 @@ with st.sidebar:
 if choose == "Home":
     st.write("Home")
 elif choose == "Make Prediction":
-    st.subheader("Breast Cancer Detection", divider=True)
 
     model_dir = snapshot_download("abatejemal/breastcancer")
     
