@@ -23,8 +23,6 @@ hide_st_text = """
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
-            ._container_gzau3_1 _viewerBadge_nim44_23{visibility: hidden;}
-            ._profilePreview_gzau3_63{visibility: hidden;}
             </style>
             """
 st.markdown(hide_st_text, unsafe_allow_html=True)
