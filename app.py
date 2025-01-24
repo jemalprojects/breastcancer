@@ -41,7 +41,8 @@ with st.sidebar:
 # logo = Image.open(r'C:\Users\13525\Desktop\Insights_Bees_logo.png')
 # profile = Image.open(r'C:\Users\13525\Desktop\medium_profile.png')
 if choose == "Home":
-    st.subheader("Home", divider=True)
+    st.subheader("Welcome to the Breast Cancer Classification App 🎗️", divider=True)
+    st.write(This app uses a state-of-the-art deep learning model to assist in classifying breast cancer images. Simply upload an image, and the model will analyze it to predict the class, helping to support early detection and diagnosis efforts."
 elif choose == "Make Prediction":
     st.subheader("Breast Cancer Classification", divider=True)
     model_dir = snapshot_download("abatejemal/breastcancer")
