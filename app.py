@@ -82,17 +82,19 @@ elif choose == "Make Prediction":
                     # Make predictions
                     predictions = loaded_model.predict(image_array)
                     predicted_class = np.argmax(predictions, axis=1)
-                    
+                    score=predicted_class[0]
+                    score1=predictions[0][score]*100
+                    score1 = round(score1, 2)
                     # Display predictions
                     st.success("Prediction completed!")
                     st.subheader("Prediction Result:")
                     result=""
                     if predicted_class[0]==1:
                         result="Positive"
-                        st.write(f"Result: :red[{result}]")
+                        st.write(f"Result: :red[{result} ({score1}%)]")
                     if predicted_class[0]==0:
                         result="Negative"
-                        st.write(f"Result: :green[{result}]")
+                        st.write(f"Result: :green[{result} ({score1}%)]")
                     # st.write(f"Predicted Class: {result}")
                 except Exception as e:
                     st.error(f"Error: {e}")
