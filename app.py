@@ -41,8 +41,22 @@ with st.sidebar:
 # logo = Image.open(r'C:\Users\13525\Desktop\Insights_Bees_logo.png')
 # profile = Image.open(r'C:\Users\13525\Desktop\medium_profile.png')
 if choose == "Home":
+    import streamlit as st
+
+    # Streamlit app title and introduction
+    # st.title("Breast Cancer Classification App 🎗️")
     st.subheader("Welcome to the Breast Cancer Classification App 🎗️", divider=True)
-    st.write(This app uses a state-of-the-art deep learning model to assist in classifying breast cancer images. Simply upload an image, and the model will analyze it to predict the class, helping to support early detection and diagnosis efforts."
+    st.markdown("""
+    Welcome to the **Breast Cancer Classification App**! This application leverages a deep learning model to classify breast cancer images. 
+    
+    ### How it Works:
+    1. Upload a breast cancer image (JPG, JPEG, or PNG format).
+    2. Click the **Submit** button to process the image.
+    3. View the predicted class and results.
+    """)
+
+    
+    
 elif choose == "Make Prediction":
     st.subheader("Breast Cancer Classification", divider=True)
     model_dir = snapshot_download("abatejemal/breastcancer")
