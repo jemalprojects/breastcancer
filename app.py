@@ -2,6 +2,7 @@ import streamlit as st
 import tensorflow as tf
 from tensorflow.keras.utils import load_img, img_to_array
 import numpy as np
+from streamlit_option_menu import option_menu
 from huggingface_hub import snapshot_download
 
 st.set_page_config(
