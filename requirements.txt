@@ -1,3 +1,4 @@
 tensorflow==2.12.0
 streamlit==1.41.1
 huggingface_hub
+streamlit-option-menu
