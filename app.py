@@ -3,7 +3,7 @@ import tensorflow as tf
 from tensorflow.keras.utils import load_img, img_to_array
 import numpy as np
 from huggingface_hub import snapshot_download
-model_dir = snapshot_download("abatejemal/breastcancer/MobileNetV2_save_model_finetuned")
+model_dir = snapshot_download("abatejemal/breastcancer")
 
 # Parameters
 img_height = 224
@@ -37,8 +37,8 @@ if uploaded_file:
                 
                 # Load the saved model
                 # export_dir = 'MobileNetV2_save_model/'  # Adjust path if needed
-                # export_dir = 'MobileNetV2_save_model_finetuned/'  # Adjust path if needed
-                export_dir = model_dir
+                export_dir = 'MobileNetV2_save_model_finetuned/'  # Adjust path if needed
+                # export_dir = model_dir
                 loaded_model = tf.keras.models.load_model(export_dir)
                 
                 # Make predictions
