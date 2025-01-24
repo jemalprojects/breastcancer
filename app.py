@@ -41,18 +41,15 @@ with st.sidebar:
 # logo = Image.open(r'C:\Users\13525\Desktop\Insights_Bees_logo.png')
 # profile = Image.open(r'C:\Users\13525\Desktop\medium_profile.png')
 if choose == "Home":
-    st.write("Home")
+    st.subheader("Home", divider=True)
 elif choose == "Make Prediction":
-
+    st.subheader("Breast Cancer Classification", divider=True)
     model_dir = snapshot_download("abatejemal/breastcancer")
     
     # Parameters
     img_height = 224
     img_width = 224
     batch_size = 16
-    
-    # Streamlit app
-    st.title("Breast Cancer Classification")
     
     # File uploader
     uploaded_file = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
