@@ -47,7 +47,7 @@ if choose == "Home":
     # st.title("Breast Cancer Classification App 🎗️")
     st.subheader("Welcome to the Breast Cancer Classification App 🎗️", divider=True)
     st.markdown("""
-    Welcome to the **Breast Cancer Classification App**! This application leverages a deep learning model to classify breast cancer images. 
+    This app uses a state-of-the-art deep learning model to assist in classifying breast cancer images. Simply upload an image, and the model will analyze it to predict the class, helping to support early detection and diagnosis efforts. 
     
     ### How it Works:
     1. Upload a breast cancer image (JPG, JPEG, or PNG format).
