@@ -106,10 +106,10 @@ elif choose == "Make Prediction":
                     st.subheader("Prediction Result:")
                     result=""
                     if predicted_class[0]==1:
-                        result="Positive"
+                        result="Sick"
                         st.write(f"Result: :red[{result} ({score1}%)]")
                     if predicted_class[0]==0:
-                        result="Negative"
+                        result="Healthy"
                         st.write(f"Result: :green[{result} ({score1}%)]")
                     # st.write(f"Predicted Class: {result}")
                 except Exception as e:
