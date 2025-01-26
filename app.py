@@ -91,7 +91,8 @@ elif choose == "Make Prediction":
                     # Load the saved model
                     # export_dir = 'MobileNetV2_save_model/'  # Adjust path if needed
                     # export_dir = '/MobileNetV2_save_model_finetuned/'  # Adjust path if needed
-                    export_dir = f'{model_dir}/MobileNetV2_save_model/'
+                    # export_dir = f'{model_dir}/MobileNetV2_save_model/'
+                    export_dir = f'{model_dir}/MobileNetV1_finetuned'
                     loaded_model = tf.keras.models.load_model(export_dir)
                     
                     # Make predictions
